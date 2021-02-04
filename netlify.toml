@@ -1,9 +1,9 @@
 [build]
 command="npm run build:netlify"
-functions="dist/src"
+functions="dist/lambdas"
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/lambda"
+  to = "/.netlify/functions/handler"
   status = 200
   force = true

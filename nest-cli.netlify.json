@@ -1,6 +1,6 @@
 {
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src",
+  "sourceRoot": "lambdas",
   "entryFile": "lambda",
   "projects": {
     "gram": {

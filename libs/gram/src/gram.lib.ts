@@ -9,6 +9,7 @@ import { tokens } from '@gram-data/gram-ast';
 
 import { select } from 'd3-selection';
 import { JSDOM } from 'jsdom';
+const d3 = require('d3');
 
 export interface SvgOutputOptions {
   id: string;

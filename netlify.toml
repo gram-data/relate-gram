@@ -1,0 +1,9 @@
+[build]
+command="npm run build:netlify"
+functions="dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/lambda"
+  status = 200
+  force = true

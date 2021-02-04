@@ -1,6 +1,6 @@
 [build]
 command="npm run build:netlify"
-functions="dist"
+functions="dist/src"
 
 [[redirects]]
   from = "/*"

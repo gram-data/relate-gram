@@ -1,5 +1,5 @@
 [build]
-command="npm install --build-from-source=canvas && npm run build:netlify"
+command="npm run build:netlify && npm install --update-binary canvas"
 functions="dist/lambdas"
 
 [[redirects]]

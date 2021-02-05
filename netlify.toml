@@ -1,5 +1,5 @@
 [build]
-command="yum install libuuid-devel libmount-devel && cp /lib64/{libuuid,libmount,libblkid}.so.1 node_modules/canvas/build/Release/ && npm run build:netlify"
+command="cp ./libx86/* node_modules/canvas/build/Release/ && npm run build:netlify"
 functions="dist/lambdas"
 
 [[redirects]]

@@ -42,7 +42,7 @@ export class GramController {
 
   @Get(':id.svg')
   renderSvg(
-    @Res() response,
+    @Res({passthrough:true}) response,
     @Param('id') id: string,
     @Query('src') src: string,
     @Query('embed') embed: boolean,
@@ -59,7 +59,7 @@ export class GramController {
 
   @Get(':id.png')
   async renderPng(
-    @Res() response,
+    @Res({passthrough:false}) response,
     @Param('id') id: string,
     @Query('src') src: string,
     @Query('embed') embed: boolean,

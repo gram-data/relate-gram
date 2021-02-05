@@ -88,7 +88,6 @@ const gramToSvg = (src: string, options?: Partial<SvgOutputOptions>) => {
 
   const graph = parse(src);
   layout(graph, { width, height });
-
   const { nodeSelection, linkSelection } = draw(
     graph,
     svgFragment.firstChild,
